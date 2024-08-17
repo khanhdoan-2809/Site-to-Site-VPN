@@ -29,15 +29,20 @@ variable "lv_igw_name" {
   type = string
 }
 
-variable "lv_internet_gateway_id" {
-  type = string
-}
-
 // route table
 variable "lv_route_table_name" {
   type = string
 }
 
 variable "lv_route_destination" {
+  type = string
+}
+
+// security group
+variable "lv_sg_name" {
+  type = string
+}
+
+variable "lv_sg_description" {
   type = string
 }

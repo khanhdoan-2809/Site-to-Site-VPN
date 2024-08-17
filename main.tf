@@ -29,3 +29,10 @@ module "route_table" {
     // subnet association
     mv_subnet_id = module.public_subnet.id
 }
+
+module "security_group" {
+    source            = "./modules/security_group"
+    mv_sg_name        = var.lv_sg_name
+    mv_sg_description = var.lv_sg_description
+    mv_vpc_id         = module.vpc.id
+}

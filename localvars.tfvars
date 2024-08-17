@@ -15,3 +15,7 @@ lv_igw_name = "Internet Gateway VPN"
 // route_table
 lv_route_table_name    = "Routable VPN - Public"
 lv_route_destination   = "0.0.0.0/0"
+
+// security group
+lv_sg_name        = "VPN Public-SG"
+lv_sg_description = "Allow IPSec, SSH, and Ping for servers in public subnet"
