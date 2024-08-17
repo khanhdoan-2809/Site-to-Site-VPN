@@ -1,7 +1,7 @@
-variable "vpc_name" {
+variable "mv_vpc_cidr_block" {
   type    = string
 }
 
-variable "vpc_cidr_block" {
+variable "mv_vpc_name" {
   type    = string
 }

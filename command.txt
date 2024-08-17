@@ -1,1 +1,2 @@
+terraform apply -var-file=./localvars.tfvars
 terraform apply -auto-approve -var-file=./localvars.tfvars

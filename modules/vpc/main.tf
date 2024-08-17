@@ -1,7 +1,7 @@
-resource "aws_vpc" "vpc_asg_vpn" {
-  cidr_block = var.vpc_cidr_block
+resource "aws_vpc" "main" {
+  cidr_block = var.mv_vpc_cidr_block
 
   tags = {
-    Name = var.vpc_name
+    Name = var.mv_vpc_name
   }
 }
