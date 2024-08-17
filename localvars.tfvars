@@ -26,3 +26,6 @@ lv_ec2_instance_type = "t2.micro"
 
 // virtual gateway
 lv_vgw_name = "VPN Gateway"
+
+// customer gateway
+lv_cgw_name = "Customer Gateway"

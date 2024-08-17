@@ -60,3 +60,8 @@ variable "lv_ec2_instance_type" {
 variable "lv_vgw_name" {
   type    = string
 }
+
+// customer gateway
+variable "lv_cgw_name" {
+  type    = string
+}

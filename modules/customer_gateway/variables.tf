@@ -1,7 +1,7 @@
-variable "mv_vpc_id" {
+variable "mv_cgw_ip_address" {
   type    = string
 }
 
-variable "mv_vgw_name" {
+variable "mv_cgw_name" {
   type    = string
 }

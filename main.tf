@@ -51,3 +51,9 @@ module "vwg" {
     mv_vpc_id = module.vpc.id
     mv_vgw_name = var.lv_vgw_name
 }
+
+module "cwg" {
+    source               = "./modules/customer_gateway"
+    mv_cgw_ip_address    = module.ec2.public_ip 
+    mv_cgw_name          = var.lv_cgw_name
+}
