@@ -11,3 +11,7 @@ lv_map_public_ip_on_launch_public  = true
 
 // internet gatway
 lv_igw_name = "Internet Gateway VPN"
+
+// route_table
+lv_route_table_name    = "Routable VPN - Public"
+lv_route_destination   = "0.0.0.0/0"

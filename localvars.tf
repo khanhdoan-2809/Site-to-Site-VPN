@@ -28,3 +28,16 @@ variable "lv_map_public_ip_on_launch_public" {
 variable "lv_igw_name" {
   type = string
 }
+
+variable "lv_internet_gateway_id" {
+  type = string
+}
+
+// route table
+variable "lv_route_table_name" {
+  type = string
+}
+
+variable "lv_route_destination" {
+  type = string
+}

@@ -18,3 +18,14 @@ module "internet_gateway" {
     mv_vpc_id         = module.vpc.id
     mv_igw_name       = var.lv_igw_name
 }
+
+module "route_table" { 
+    source                        = "./modules/route_table"
+    mv_vpc_id                     = module.vpc.id
+    mv_route_table_name           = var.lv_route_table_name
+    mv_internet_gateway_id        = module.internet_gateway.id
+    mv_route_destination          = var.lv_route_destination
+
+    // subnet association
+    mv_subnet_id = module.public_subnet.id
+}
