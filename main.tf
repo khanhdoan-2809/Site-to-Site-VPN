@@ -57,3 +57,11 @@ module "cwg" {
     mv_cgw_ip_address    = module.ec2.public_ip 
     mv_cgw_name          = var.lv_cgw_name
 }
+
+module "vpn_connection" {
+    source                 = "./modules/vpn_connection"
+    mv_vgw_id              = module.vwg.id
+    mv_cgw_id              = module.cwg.id
+    mv_vpn_connection_name = var.lv_vpn_connection_name
+
+}

@@ -65,3 +65,8 @@ variable "lv_vgw_name" {
 variable "lv_cgw_name" {
   type    = string
 }
+
+// vpn connection
+variable "lv_vpn_connection_name" {
+  type    = string
+}

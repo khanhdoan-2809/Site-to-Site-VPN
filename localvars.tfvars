@@ -29,3 +29,6 @@ lv_vgw_name = "VPN Gateway"
 
 // customer gateway
 lv_cgw_name = "Customer Gateway"
+
+// vpn connection
+lv_vpn_connection_name = "VPN Connection"
