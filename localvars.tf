@@ -46,3 +46,12 @@ variable "lv_sg_name" {
 variable "lv_sg_description" {
   type = string
 }
+
+// ec2
+variable "lv_ec2_name" {
+  type    = string
+}
+
+variable "lv_ec2_instance_type" {
+    type    = string
+}

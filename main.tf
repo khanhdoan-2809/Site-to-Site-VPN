@@ -36,3 +36,12 @@ module "security_group" {
     mv_sg_description = var.lv_sg_description
     mv_vpc_id         = module.vpc.id
 }
+
+module "ec2" {
+    source                         = "./modules/ec2"
+    mv_ec2_name                    = var.lv_ec2_name
+    mv_ec2_ami                     = data.aws_ami.amzn-linux-2023-ami.id
+    mv_ec2_instance_type           = var.lv_ec2_instance_type
+    mv_ec2_subnet_id               = module.public_subnet.id
+    mv_ec2_vpc_security_group_ids  = [module.security_group.id]
+}

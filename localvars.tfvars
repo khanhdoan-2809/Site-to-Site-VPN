@@ -19,3 +19,7 @@ lv_route_destination   = "0.0.0.0/0"
 // security group
 lv_sg_name        = "VPN Public-SG"
 lv_sg_description = "Allow IPSec, SSH, and Ping for servers in public subnet"
+
+// ec2
+lv_ec2_name          = "Customer Gateway Instance"
+lv_ec2_instance_type = "t2.micro"
