@@ -23,3 +23,6 @@ lv_sg_description = "Allow IPSec, SSH, and Ping for servers in public subnet"
 // ec2
 lv_ec2_name          = "Customer Gateway Instance"
 lv_ec2_instance_type = "t2.micro"
+
+// virtual gateway
+lv_vgw_name = "VPN Gateway"

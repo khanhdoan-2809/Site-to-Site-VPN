@@ -55,3 +55,8 @@ variable "lv_ec2_name" {
 variable "lv_ec2_instance_type" {
     type    = string
 }
+
+// virtual gateway
+variable "lv_vgw_name" {
+  type    = string
+}

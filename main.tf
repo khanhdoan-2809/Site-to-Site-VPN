@@ -45,3 +45,9 @@ module "ec2" {
     mv_ec2_subnet_id               = module.public_subnet.id
     mv_ec2_vpc_security_group_ids  = [module.security_group.id]
 }
+
+module "vwg" {
+    source    = "./modules/virtual_gateway"
+    mv_vpc_id = module.vpc.id
+    mv_vgw_name = var.lv_vgw_name
+}
